@@ -1,0 +1,173 @@
+/* Basic layout and styling */
+.lummi-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 1800px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #3e0dc7, #19dad0, #c31190);
+    /* Gradient background */
+    background-size: 500% 500%;
+    /* Smooth gradient animation */
+    animation: gradientBackground 15s ease infinite;
+    min-height: 100vh;
+    /* Ensure the container covers the entire viewport height */
+    box-sizing: border-box;
+    /* Include padding and borders in height/width */
+    position: relative;
+}
+
+/* Create white background on both sides */
+.lummi-container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: white;
+    z-index: -1;
+    /* Set z-index so it stays behind the content */
+    border-radius: 20px;
+    /* Add a border-radius for smoother edges */
+    margin: 0 10%;
+    /* Adjust margin to control the width of the white sides */
+}
+
+/* Smooth animation for the gradient */
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* The rest of the styling remains the same */
+.logo-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo-container img {
+    height: 80px;
+    width: 80px;
+    object-fit: contain;
+}
+
+.search-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.search-container input {
+    padding: 8px 12px;
+    font-size: 16px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.search-container button {
+    padding: 10px 15px;
+    font-size: 16px;
+    margin: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.search-container button:hover {
+    background-color: #45a049;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.image-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    width: 220px;
+}
+
+.image-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.image-item button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    font-size: 14px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.image-item button:hover {
+    background-color: #0056b3;
+}
+
+.lummi-container {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.logo-container img {
+    width: 64px;
+}
+
+.search-container {
+    margin: 20px 0;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.image-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-item img {
+    max-width: 200px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

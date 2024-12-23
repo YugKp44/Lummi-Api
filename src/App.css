@@ -1,0 +1,61 @@
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #3e0dc7, #19dad0, #c31190);
+  /* Gradient background */
+  background-size: 400% 400%;
+  /* Smooth gradient animation */
+  animation: gradientBackground 15s ease infinite;
+  flex-direction: column;
+}
+
+/* Smooth animation for the gradient */
+@keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.app-card {
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.app-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.app-logo {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 15px;
+}
+
+.app-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.app-description {
+  font-size: 1rem;
+  color: #666;
+}
