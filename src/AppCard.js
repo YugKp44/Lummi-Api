@@ -1,10 +1,9 @@
-import React, { useState } from "react";
+import React from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate for redirection
 import "./App.css"; // Optional: If you want to add custom styles
 
 const AppCard = () => {
-  const [searchTerm, setSearchTerm] = useState("");
-  const [images, setImages] = useState([]);
+
   const navigate = useNavigate(); // Hook for navigation
 
   // Fetch random images from an API when search term changes

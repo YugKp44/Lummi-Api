@@ -44,7 +44,7 @@ const LummiApp = () => {
 
   // Fetch random images on initial load
   useEffect(() => {
-    fetchRandomImages("nature", 10); // Preload 10 nature images
+    fetchRandomImages("nature", 20); // Preload 10 nature images
   }, []);
 
   // Function to search for images based on user query
