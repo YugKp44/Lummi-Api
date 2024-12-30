@@ -16,7 +16,37 @@
     /* Include padding and borders in height/width */
     position: relative;
 }
+.image-placeholder {
+    background-color: #e0e0e0;
+    height: 200px;
+    /* Adjust height based on your design */
+    overflow: hidden;
+    position: relative;
+}
 
+.image {
+    filter: blur(10px);
+    width: 100%;
+    height: auto;
+    transition: filter 0.3s ease-in-out;
+    object-fit: cover;
+}
+
+.image.loaded {
+    filter: blur(0);
+}
+
+.image-item {
+    margin: 10px;
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
 /* Create white background on both sides */
 .lummi-container:before {
     content: '';
